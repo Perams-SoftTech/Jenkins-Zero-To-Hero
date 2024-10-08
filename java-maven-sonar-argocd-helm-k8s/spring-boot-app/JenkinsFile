@@ -11,8 +11,8 @@ pipeline {
         script{
           // Change ownership and permissions without sudo
           sh 'echo passed'
-          sh 'chown -R jenkins:jenkins /var/lib/jenkins/workspace/ultimate-demo'
-          sh 'chmod -R 755 /var/lib/jenkins/workspace/ultimate-demo'
+          //sh 'chown -R jenkins:jenkins /var/lib/jenkins/workspace/ultimate-demo'
+          //sh 'chmod -R 755 /var/lib/jenkins/workspace/ultimate-demo'
         }
         git branch: 'main', url: 'https://github.com/Perams-SoftTech/Jenkins-Zero-To-Hero.git'
       }
